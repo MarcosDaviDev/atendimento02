@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento02</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="main-box">
+                <!-- Conteúdo da caixa principal-->
+                <h2>Formulário de Chamado</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" id="empresa" name="empresa">
+                    </div>
+                    <div class="form-group">
+                        <label for="acesso">Acesso:</label>
+                        <input type="text" id="acesso" name="acesso">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" id="telefone" name="telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="problema">Problema:</label>
+                        <textarea id="problema" name="problema"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="solucao">Solução:</label>
+                        <textarea id="solucao" name="solucao"></textarea>
+                    </div>
+                    <div id="overlay" class="overlay">
+                        <div class="conteudo-registro">
+                            <h2>Campos Registrados:</h2>
+                            <div id="saida"></div>
+                            <button class="copiar spacing" id="button-copy" type="button">Copiar</button>
+                            <button onclick="fecharRegistro()" class="fecharRegistro spacing" id="button-reload" type="submit">Recarregar</button>
+                          </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="side-box">
+                <div>
+                    <output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>
+                </div>
+                <div class="relogio">
+                    <output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>				
+                </div>
+                <h2>Ramais</h2>
+                <ul>
+                    <li>201: Reginaldo</li>
+                    <li>202: Davi</li>
+                    <li>203: Maurílio</li>
+                    <li>204: Josué</li>
+                    <li>205: Luis Carlos</li>
+                    <li>206: Matheus</li>
+                    <li>207: Geovane</li>
+                    <li>208: Iran</li>
+                    <li>209: Levi</li>
+                    <li>210: Sr. Wagner</li>
+                    <li>211: D. Vania</li>
+                    <li>212: Sala de Reunião</li>
+                    <li>213: Airton</li>
+                    <li>214: Pedro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+	<script type="text/javascript">
+		jQuery(window).load(function($){
+			atualizaRelogio();
+		});
+	</script>
+</body>
+</html>

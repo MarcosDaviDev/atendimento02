@@ -1,0 +1,90 @@
+/* Reset de estilos e fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+}
+
+/* Container para centralizar o layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: rgb(13, 20, 3);
+    padding-top: 2vh;
+}
+
+/* Caixa da coluna esquerda */
+.left-column {
+    margin-left: auto;
+    flex: 1;
+    max-width: 50%; /* Definindo a largura máxima */    
+    padding-right: 20px;
+}
+
+/* Caixa principal no centro */
+.main-box {
+    width: 100%;
+    padding: 25px;
+    background-color: #80e40e;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Caixa da coluna direita */
+.right-column {
+    margin-right: auto;
+    flex: 1;
+    max-width: 30%; /* Definindo a largura máxima */
+    border-radius: 20px;
+    overflow: hidden; /* Para garantir que o contorno seja aplicado corretamente */
+}
+
+/* Estilos para a lista não ordenada dentro da .right-column */
+.right-column ul, p {
+    list-style-type: square; /* Define o tipo de marcador para quadrados */
+    margin-left: 20px; /* Adiciona um recuo à esquerda */
+    padding-left: 20px; /* Adiciona espaço à esquerda do conteúdo da lista */
+    font-size: 1rem; /* Define o tamanho da fonte */
+    color: #555; /* Define a cor do texto */
+}
+
+/* Caixa na coluna direita */
+.side-box {
+    width: 100%;
+    padding: 20px;
+    background-color: #9fec22;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para as labels e inputs/textarea */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Butão de copiar */
+#button-copy, #button-reload {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
